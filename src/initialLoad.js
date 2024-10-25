@@ -1,14 +1,15 @@
 import seasideImage from "../public/images/seaside.jpg"
+import "./initialLoad.css"
 
 export const initialLoad = () => {
 
   const content = document.querySelector("#content");
-  const section = document.createElement("section");
-  section.classList.add("home-section")
-  content.appendChild(section)
+  const homeSection = document.createElement("section");
+  homeSection.classList.add("home-section")
+  content.appendChild(homeSection)
 
   const div = document.createElement("div");
-  section.appendChild(div)
+  homeSection.appendChild(div)
   div.classList.add("home-wrapper")
 
 
