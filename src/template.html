@@ -10,12 +10,37 @@
       <nav>
         <button id="home-btn">Home</button>
         <button id="menu-btn">Menu</button>
-        <button id="contact-btn">Contact</button>
+        <!-- <button id="contact-btn">Contact</button> -->
       </nav>
     </header>
 
-    <div id="content">
-     
-    </div>
+    <div id="content"></div>
+
+    <!-- home page template -->
+    <template id="home-template">
+      <section class="home-section">
+        <div class="home-wrapper">
+          <img src="../public/images/seaside.jpg" alt="ocean cliffs" class="home-image"/>
+          <h1 class="home-heading">Cliffside Cafe</h1>
+          <p class="home-info">
+            Unwind and enjoy good food with the most beautiful ocean view in San
+            Diego
+          </p>
+        </div>
+      </section>
+    </template>
+
+    <!-- menu page template -->
+    <template id="menu-template">
+      <section class="menu-section">
+        <div class="menu-wrapper">
+          <div class="menu-item">
+            <h3 class="item-name"></h3>
+            <p class="item-description">item info</p>
+          </div>
+          <p class="item-price">item price</p>
+        </div>
+      </section>
+    </template>
   </body>
 </html>

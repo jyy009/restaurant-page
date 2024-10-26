@@ -1,34 +1,18 @@
+import { menuItems } from "./menuItems";
+
 export const menu = () => {
- 
-  const content = document.querySelector("#content");
+  const menuTemplate = document.getElementById("menu-template");
 
-  const menuSection = document.createElement("section");
-  menuSection.classList.add("menu-section")
-  content.appendChild(menuSection)
+  menuItems.forEach(item => {
+    const menuClone = menuTemplate.content.cloneNode(true);
 
-  const menuWrapper = document.createElement("div")
-  menuWrapper.classList.add("menu-wrapper")
-  menuSection.appendChild(menuWrapper)
+    menuClone.querySelector(".item-name").textContent = item.name
+    menuClone.querySelector(".item-description").textContent = item.description
+    menuClone.querySelector(".item-price").textContent = item.price
 
-  const menuItem = document.createElement("div")
-  menuItem.classList.add("menu-item")
-  menuWrapper.appendChild(menuItem)
+    const content = document.querySelector("#content");
+  content.appendChild(menuClone);
+  })
 
-  const itemName = document.createElement("h3")
-  itemName.classList.add("item-name")
-  itemName.textContent = "Porridge"
   
-  
-  const itemInfo = document.createElement("p")
-  itemInfo.classList.add("item-info")
-  itemInfo.textContent = "Fresh blueberries, oats, whipped cheese, fresh mint, agave."
-  
-  menuItem.appendChild(itemName)
-  menuItem.appendChild(itemInfo)
-
-  const itemPrice = document.createElement("p")
-  itemPrice.classList.add("item-price")
-  
-
-
-}
+};
