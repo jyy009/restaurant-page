@@ -3,3 +3,41 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --main-font: Arial, Helvetica, sans-serif;
+  --main-bg-color: #f3efec;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-bg-color);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--main-bg-color);
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  z-index: 10;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+  .nav {
+    display: flex;
+    gap: 30px;
+  
+    #home-btn, #menu-btn {
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+

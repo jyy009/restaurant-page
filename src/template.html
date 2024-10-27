@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Restaurant Page</title>
   </head>
   <body>
+
     <header>
-      <nav>
+      <h1>Milestone</h1>
+      <nav class="nav">
         <button id="home-btn">Home</button>
         <button id="menu-btn">Menu</button>
-        <!-- <button id="contact-btn">Contact</button> -->
       </nav>
     </header>
 
@@ -19,13 +20,41 @@
     <!-- home page template -->
     <template id="home-template">
       <section class="home-section">
-        <div class="home-wrapper">
-          <img src="../public/images/seaside.jpg" alt="ocean cliffs" class="home-image"/>
-          <h1 class="home-heading">Cliffside Cafe</h1>
-          <p class="home-info">
-            Unwind and enjoy good food with the most beautiful ocean view in San
-            Diego
-          </p>
+        <img
+          src="../public/images/cafe.jpg"
+          alt="ocean cliffs"
+          class="home-image"
+        />
+
+        <div class="home-info-wrapper">
+          <div>
+            <p class="home-info">
+              Welcome to Milestone. Brunch, fika and specialty coffee in the heart of downtown La Jolla.
+            </p>
+          </div>
+          <div class="home-hours-wrapper">
+            <div>
+              <h3 class="home-hours">Opening hours</h3>
+              <p>Sun-Sat 7am-3pm</p>
+            </div>
+            <div>
+              <h3 class="home-location">Location</h3>
+              <p>19 La Jolla Blvd, La Jolla CA</p>
+            </div>
+            <div>
+              <h3 class="home-contact">Contact</h3>
+              <p>805 213 4229</p>
+              <p>milestone@mail.com</p>
+            </div>
+            <p class="home-info">
+              Welcome to Milestone. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Earum sunt accusantium ipsa error sequi
+              praesentium reprehenderit excepturi, eius magnam! Exercitationem
+              culpa sunt cumque asperiores vero distinctio vitae quam veritatis
+              voluptates.
+            </p>
+            <img src="../public/images/cafe.jpg" alt="cafe" />
+          </div>
         </div>
       </section>
     </template>
