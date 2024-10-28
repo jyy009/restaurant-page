@@ -1,23 +1,16 @@
 .home-section {
-  position: relative;
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
 
   .home-image {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 50%;
     object-fit: cover;
-    z-index: -1;
   }
 
   .home-info-wrapper {
-    position: relative;
-    padding: 20px;
-    margin-top: 50vh;
+    padding: 40px 0;
     background-color: var(--main-bg-color);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -30,7 +23,7 @@
       line-height: 1.5;
 
       p {
-        font-size: 2rem;
+        font-size: calc(1.5rem + 1vw);
         font-weight: 400;
         text-align: center;
       }
@@ -41,24 +34,47 @@
 .home-contact-wrapper {
   grid-column: 2/4;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   row-gap: 50px;
-  width: 100%;
+  justify-items: center;
 }
-
 
 .contact-wrapper-one,
 .contact-wrapper-two {
   display: flex;
-  width: 100%;
-
+  flex-direction: column;
+  gap: 30px;
 }
 
-.contact-wrapper-one > div,
-.contact-wrapper-two > div {
-  flex: 1;
-  max-width: 100%; 
+.contact-div-one,
+.contact-div-two {
+  display: flex;
+  flex-direction: column;
 }
 
+.contact-wrapper-one > div > h3,
+.contact-wrapper-two > div > h3 {
+  font-size: calc(0.8rem + 1vw);
+  padding-bottom: min(10px, 1vw);
+}
 
+.contact-wrapper-one > div > p,
+.contact-wrapper-two > div > p {
+  font-size: calc(0.5rem + 1vw);
+}
+
+@media (max-width: 767px) {
+  .home-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-wrapper-one,
+  .contact-wrapper-two {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+}
