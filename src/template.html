@@ -6,8 +6,7 @@
     <title>Restaurant Page</title>
   </head>
   <body>
-
-    <header>
+    <header class="container">
       <h1>Milestone</h1>
       <nav class="nav">
         <button id="home-btn">Home</button>
@@ -19,7 +18,7 @@
 
     <!-- home page template -->
     <template id="home-template">
-      <section class="home-section">
+      <section class="home-section container">
         <img
           src="../public/images/cafe.jpg"
           alt="ocean cliffs"
@@ -27,33 +26,44 @@
         />
 
         <div class="home-info-wrapper">
-          <div>
-            <p class="home-info">
-              Welcome to Milestone. Brunch, fika and specialty coffee in the heart of downtown La Jolla.
+          <div class="home-info">
+            <p>
+              Welcome to Milestone. Brunch, fika and specialty coffee in the
+              heart of sunny San Diego.
             </p>
           </div>
-          <div class="home-hours-wrapper">
-            <div>
-              <h3 class="home-hours">Opening hours</h3>
-              <p>Sun-Sat 7am-3pm</p>
+
+          <div class="home-contact-wrapper">
+            <div class="contact-wrapper-one">
+              <div>
+                <h3 class="home-hours">Opening hours</h3>
+                <p>
+                  Sun - Sat <br />
+                  7am - 3pm
+                </p>
+              </div>
+              <div>
+                <h3 class="home-location">Location</h3>
+                <p>
+                  519 La Jolla Blvd <br />
+                  San Diego, CA
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 class="home-location">Location</h3>
-              <p>19 La Jolla Blvd, La Jolla CA</p>
+
+            <div class="contact-wrapper-two">
+              <div>
+                <h3 class="home-phone">Contact</h3>
+                <p>
+                  805 213 4229 <br />
+                  milestone@mail.com
+                </p>
+              </div>
+              <div>
+                <h3 class="home-cater">Catering</h3>
+                <p>We offer catering for events.</p>
+              </div>
             </div>
-            <div>
-              <h3 class="home-contact">Contact</h3>
-              <p>805 213 4229</p>
-              <p>milestone@mail.com</p>
-            </div>
-            <p class="home-info">
-              Welcome to Milestone. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Earum sunt accusantium ipsa error sequi
-              praesentium reprehenderit excepturi, eius magnam! Exercitationem
-              culpa sunt cumque asperiores vero distinctio vitae quam veritatis
-              voluptates.
-            </p>
-            <img src="../public/images/cafe.jpg" alt="cafe" />
           </div>
         </div>
       </section>
@@ -61,15 +71,13 @@
 
     <!-- menu page template -->
     <template id="menu-template">
-      <section class="menu-section">
-        <div class="menu-wrapper">
-          <div class="menu-item">
-            <h3 class="item-name"></h3>
-            <p class="item-description">item info</p>
-          </div>
-          <p class="item-price">item price</p>
+      <div class="item-wrapper">
+        <div class="menu-item">
+          <h3 class="item-name"></h3>
+          <p class="item-description">item info</p>
         </div>
-      </section>
+        <p class="item-price">item price</p>
+      </div>
     </template>
   </body>
 </html>

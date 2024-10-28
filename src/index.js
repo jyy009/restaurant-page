@@ -8,7 +8,8 @@ const content = document.getElementById("content");
 const homeButton = document.querySelector("#home-btn");
 homeButton.addEventListener("click", () => {
   content.textContent = "";
-  initialLoad();
+  initialLoad(); 
+
 });
 
 const menuButton = document.querySelector("#menu-btn");

@@ -19,6 +19,46 @@
     padding: 20px;
     margin-top: 50vh;
     background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 40px;
 
+    .home-info {
+      grid-column: 2/4;
+      grid-row: 1;
+      line-height: 1.5;
+
+      p {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
   }
 }
+
+.home-contact-wrapper {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 50px;
+  width: 100%;
+}
+
+
+.contact-wrapper-one,
+.contact-wrapper-two {
+  display: flex;
+  width: 100%;
+
+}
+
+.contact-wrapper-one > div,
+.contact-wrapper-two > div {
+  flex: 1;
+  max-width: 100%; 
+}
+
+
